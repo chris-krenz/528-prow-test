@@ -94,3 +94,18 @@ TODO: add more detail...
  - key.json generated in Google Cloud
  - gcs-credentials.json generated in Google Cloud
 
+Pull a config file: 
+
+```console
+kubectl get configmap config -n prow -o yaml > config.yaml
+```
+
+Apply a config file:
+```console
+kubectl apply -f config.yaml -n prow
+```
+
+
+
+kubectl set image deployment/plank -n prow plank=gcr.io/k8s-prow/plank:v20210410-57fae234ba
+https://console.cloud.google.com/gcr/images/k8s-prow/GLOBAL/plank?inv=1&invt=Abh9Nw
