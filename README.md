@@ -145,3 +145,6 @@ plank now running, but still getting the tide error in GH
 May need to update ip address (kubectl get service deck -n prow) in GH webhook, GH App, config file and plank file.
 GPT seems at a dead end.  May need ot start fresh and walk through all configs, etc slowly.
 
+
+COMMAND HELP
+https://prow.k8s.io/command-help
