@@ -94,15 +94,34 @@ TODO: add more detail...
  - key.json generated in Google Cloud
  - gcs-credentials.json generated in Google Cloud
 
-Pull a config file: 
+Pull a config file or secret: 
 
 ```console
 kubectl get configmap config -n prow -o yaml > config.yaml
+kubectl get deployment plank -n prow -o yaml > plank.yaml
+kubectl get secret kubeconfig -n prow -o yaml > secret.yaml
 ```
 
 Apply a config file:
 ```console
 kubectl apply -f config.yaml -n prow
+```
+
+Restart a service:
+
+```console
+kubectl rollout restart deployment/plank -n prow
+```
+
+Scale replicas
+
+```console
+kubectl scale deployment plank --replicas=1 -n prow
+```
+
+Delete a pod
+```console
+kubectl delete pod -l app=plank -n prow
 ```
 
 
