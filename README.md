@@ -124,7 +124,10 @@ Delete a pod
 kubectl delete pod -l app=plank -n prow
 ```
 
-
+Browse pod files
+```console
+kubectl exec -n prow deck-5f7b47985d-f9g9b -- ls etc/config -la
+```
 
 kubectl set image deployment/plank -n prow plank=gcr.io/k8s-prow/plank:v20210410-57fae234ba
 https://console.cloud.google.com/gcr/images/k8s-prow/GLOBAL/plank?inv=1&invt=Abh9Nw
