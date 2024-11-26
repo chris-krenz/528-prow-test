@@ -1,0 +1,19 @@
+apiVersion: prow.k8s.io/v1
+kind: ProwJob
+metadata:
+  name: simple-presubmit
+spec:
+  type: presubmit
+  agent: kubernetes
+  job: echo-job
+  refs:
+    org: chris-krenz
+    repo: 528-prow-test
+    base_ref: main
+  pod_spec:
+    containers:
+    - image: alpine:latest
+      command:
+        - sh
+        - -c
+        - echo "Hello from Prow!"
