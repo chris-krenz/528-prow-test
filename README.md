@@ -129,6 +129,13 @@ Browse pod files
 kubectl exec -n prow deck-5f7b47985d-f9g9b -- ls etc/config -la
 ```
 
+Search kubernetes configs, configmaps, and secrets
+```console
+kubectl get all --all-namespaces -o yaml | grep -E '35\.243\.234\.190'
+kubectl get configmap --all-namespaces -o yaml | grep -E '35\.243\.234\.190'
+kubectl get secrets --all-namespaces -o yaml | grep -E '35\.243\.234\.190'
+```
+
 kubectl set image deployment/plank -n prow plank=gcr.io/k8s-prow/plank:v20210410-57fae234ba
 https://console.cloud.google.com/gcr/images/k8s-prow/GLOBAL/plank?inv=1&invt=Abh9Nw
 
