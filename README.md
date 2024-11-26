@@ -139,6 +139,3 @@ kubectl get secrets --all-namespaces -o yaml | grep -E '35\.243\.234\.190'
 kubectl set image deployment/plank -n prow plank=gcr.io/k8s-prow/plank:v20210410-57fae234ba
 https://console.cloud.google.com/gcr/images/k8s-prow/GLOBAL/plank?inv=1&invt=Abh9Nw
 
-
-
-aTESTING
