@@ -152,3 +152,29 @@ https://prow.k8s.io/command-help
 
 https://github.com/kubernetes/test-infra/issues/24141
 
+
+
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:18 PM)
+https://teselagen.com/molecular-biology-toolkit/
+https://teselagen.com/wp-content/uploads/2024/09/DNA-assembly-design-1536x1032.png
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:32 PM)
+We can have a short meeting with all devs so we discuss this Nick
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:41 PM)
+We can take a highly suspicious sequence like the spike protein, take a very small part of the sequence (which will be hard to trigger warning on biosecurity checks) and use for the deletions examples.
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:48 PM)
+Create a UI maybe?
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:54 PM)
+We can search something like "snakemake pipeline protein design", so we can see each tool and step used for protein design
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 3:16 PM)
+ Will be interesting to send sequences directly from the twist workflow page that is not feasible, with annotations to Benchling and Geneious Prime
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 3:23 PM)
+What do you think about nail down a demo for Benchling + Twist?
+
+709 E 5th St.
+Boston, MA 02127
