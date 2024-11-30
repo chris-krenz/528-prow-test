@@ -139,3 +139,42 @@ kubectl get secrets --all-namespaces -o yaml | grep -E '35\.243\.234\.190'
 kubectl set image deployment/plank -n prow plank=gcr.io/k8s-prow/plank:v20210410-57fae234ba
 https://console.cloud.google.com/gcr/images/k8s-prow/GLOBAL/plank?inv=1&invt=Abh9Nw
 
+
+
+plank now running, but still getting the tide error in GH
+May need to update ip address (kubectl get service deck -n prow) in GH webhook, GH App, config file and plank file.
+GPT seems at a dead end.  May need ot start fresh and walk through all configs, etc slowly.
+
+
+COMMAND HELP
+https://prow.k8s.io/command-help
+
+
+https://github.com/kubernetes/test-infra/issues/24141
+
+
+
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:18 PM)
+https://teselagen.com/molecular-biology-toolkit/
+https://teselagen.com/wp-content/uploads/2024/09/DNA-assembly-design-1536x1032.png
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:32 PM)
+We can have a short meeting with all devs so we discuss this Nick
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:41 PM)
+We can take a highly suspicious sequence like the spike protein, take a very small part of the sequence (which will be hard to trigger warning on biosecurity checks) and use for the deletions examples.
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:48 PM)
+Create a UI maybe?
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 2:54 PM)
+We can search something like "snakemake pipeline protein design", so we can see each tool and step used for protein design
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 3:16 PM)
+ Will be interesting to send sequences directly from the twist workflow page that is not feasible, with annotations to Benchling and Geneious Prime
+ 
+Isaac Guerreiro to Everyone (Nov 26, 2024, 3:23 PM)
+What do you think about nail down a demo for Benchling + Twist?
+
+709 E 5th St.
+Boston, MA 02127
