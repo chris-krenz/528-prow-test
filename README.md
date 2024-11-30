@@ -159,3 +159,5 @@ gcloud components install gke-gcloud-auth-plugin
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 gcloud container clusters get-credentials prow --zone us-east1-b --project kata-prow
 ```
+
+TEST
