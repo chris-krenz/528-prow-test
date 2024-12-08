@@ -160,3 +160,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 gcloud container clusters get-credentials prow --zone us-east1-b --project kata-prow
 ```
 
+
+kubectl describe pod plank-6f9b64d8f8-shkvh -n prow
+
+gcloud compute ssh gke-prow-default-pool-cdc7595c-g3pm --zone us-east1-b
