@@ -164,3 +164,7 @@ gcloud container clusters get-credentials prow --zone us-east1-b --project kata-
 kubectl describe pod plank-6f9b64d8f8-shkvh -n prow
 
 gcloud compute ssh gke-prow-default-pool-cdc7595c-g3pm --zone us-east1-b
+
+
+run commands inside container; start shell
+ckrenz@cloudshell:~ (kata-prow)$ kubectl exec -it plank-86bf488878-dpcmt -n prow -- /bin/sh
